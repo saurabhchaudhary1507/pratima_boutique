@@ -43,17 +43,17 @@ export function SiteFooter() {
               Visit Us
             </h3>
             <address className="not-italic text-sm text-brand-text-secondary space-y-1">
-              <p>123 High Street</p>
-              <p>London, W1A 1AA</p>
+              <p>Near Sagar Test House</p>
+              <p>Dasharabagh, Barabanki</p>
               <p className="mt-2">
                 <a
-                  href="tel:+442071234567"
+                  href="tel:+919918266419"
                   className="hover:text-brand-primary transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2 rounded"
                 >
-                  +44 (0) 207 123 4567
+                  +91 9918266419, +91 9956528448
                 </a>
               </p>
-              <p className="mt-2 text-xs">Mon–Sat: 10:00–19:00</p>
+              <p className="mt-2 text-xs">Mon–Sun: 10:00–20:00</p>
             </address>
           </div>
         </div>

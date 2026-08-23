@@ -18,14 +18,20 @@ export function SiteHeader() {
           {/* Logo */}
           <Link
             href="/"
-            className="flex items-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2 rounded"
+            className="flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2 rounded"
             aria-label="Pratima Boutique — Home"
           >
             <span className="font-serif text-xl font-bold text-brand-primary tracking-wide">
               Pratima
             </span>
-            <span className="font-serif text-xl font-light text-brand-text-secondary ml-1">
+            <span className="font-serif text-xl font-light text-brand-text-secondary">
               Boutique
+            </span>
+            <span
+              aria-hidden="true"
+              className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border-2 border-brand-text-primary font-serif text-[10px] font-bold tracking-[-0.08em] text-brand-text-primary"
+            >
+              PB
             </span>
           </Link>
 
