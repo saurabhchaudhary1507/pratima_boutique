@@ -1,6 +1,7 @@
 'use client';
 
-import type { FormEvent, useState } from 'react';
+import type { FormEvent } from 'react';
+import type { useState } from 'react';
 
 const whatsappNumber = '919918266419';
 
