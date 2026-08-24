@@ -122,6 +122,7 @@ export interface SiteSettings {
   featuredCollections: Collection[];
   metaTitle: string;
   metaDescription: string;
+  ownerImage?: SanityImageAsset;
 }
 
 // ---------------------------------------------------------------------------

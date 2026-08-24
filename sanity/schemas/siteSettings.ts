@@ -29,6 +29,21 @@ export const siteSettingsSchema = defineType({
       description: 'Max 160 characters',
       validation: (Rule) => Rule.max(160),
     }),
+    defineField({
+      name: 'ownerImage',
+      title: 'Owner Photo',
+      description: 'Optional photo shown on the Contact Us page',
+      type: 'image',
+      options: { hotspot: true },
+      fields: [
+        defineField({
+          name: 'altText',
+          title: 'Alt text',
+          type: 'string',
+          validation: (Rule) => Rule.required(),
+        }),
+      ],
+    }),
   ],
   preview: {
     select: { title: 'metaTitle' },

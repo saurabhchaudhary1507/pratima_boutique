@@ -61,6 +61,16 @@ export const SITE_SETTINGS_QUERY = `
   *[_type == "siteSettings"][0] {
     metaTitle,
     metaDescription,
+    "ownerImage": {
+      "asset": {
+        "url": ownerImage.asset->url,
+        "metadata": {
+          "lqip": ownerImage.asset->metadata.lqip,
+          "dimensions": ownerImage.asset->metadata.dimensions
+        }
+      },
+      "altText": ownerImage.altText
+    },
     "featuredCollections": featuredCollections[]->{
       _id,
       name,
