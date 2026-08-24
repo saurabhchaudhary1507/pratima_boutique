@@ -51,7 +51,7 @@ export default function SelectionListPage() {
                 {item.selectedSize && <div><dt className="sr-only">Size</dt><dd>Size: {item.selectedSize}</dd></div>}
                 {item.selectedColour && <div><dt className="sr-only">Colour</dt><dd>Colour: {item.selectedColour}</dd></div>}
               </dl>
-              <p className="mt-3 font-semibold text-brand-text-primary">£{item.price.toFixed(2)}</p>
+              <p className="mt-3 font-semibold text-brand-text-primary">Rs.{item.price.toFixed(2)}</p>
             </div>
             <button type="button" onClick={() => removeItem(item.productId, item.selectedSize, item.selectedColour)} className="self-start rounded px-3 py-2 text-sm font-semibold text-brand-primary hover:bg-rose-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary focus-visible:ring-offset-2">Remove<span className="sr-only"> {item.name}</span></button>
           </li>

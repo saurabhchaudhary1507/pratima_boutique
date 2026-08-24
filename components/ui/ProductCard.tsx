@@ -72,16 +72,16 @@ export function ProductCard({ product, showNewBadge = true, priority = false }: 
         <div className="flex items-center gap-2 mt-auto">
           {isSale && product.originalPrice !== undefined ? (
             <>
-              <span className="text-sm text-brand-text-light line-through" aria-label={`Original price £${product.originalPrice.toFixed(2)}`}>
-                £{product.originalPrice.toFixed(2)}
+              <span className="text-sm text-brand-text-light line-through" aria-label={`Original price Rs.${product.originalPrice.toFixed(2)}`}>
+                Rs.{product.originalPrice.toFixed(2)}
               </span>
-              <span className="text-base font-semibold text-brand-primary" aria-label={`Sale price £${product.price.toFixed(2)}`}>
-                £{product.price.toFixed(2)}
+              <span className="text-base font-semibold text-brand-primary" aria-label={`Sale price Rs.${product.price.toFixed(2)}`}>
+                Rs.{product.price.toFixed(2)}
               </span>
             </>
           ) : (
             <span className="text-base font-semibold text-brand-text-primary">
-              £{product.price.toFixed(2)}
+              Rs.{product.price.toFixed(2)}
             </span>
           )}
         </div>

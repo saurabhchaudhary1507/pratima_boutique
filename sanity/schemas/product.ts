@@ -37,13 +37,13 @@ export const productSchema = defineType({
     }),
     defineField({
       name: 'price',
-      title: 'Price (£)',
+      title: 'Price (Rs.)',
       type: 'number',
       validation: (Rule) => Rule.required().positive(),
     }),
     defineField({
       name: 'originalPrice',
-      title: 'Original Price (£)',
+      title: 'Original Price (Rs.)',
       description: 'Set if this product is on sale. Must be higher than current price.',
       type: 'number',
       validation: (Rule) => Rule.positive(),
@@ -142,7 +142,7 @@ export const productSchema = defineType({
     prepare({ title, subtitle, media }) {
       return {
         title,
-        subtitle: subtitle ? `£${subtitle}` : 'No price set',
+        subtitle: subtitle ? `Rs.${subtitle}` : 'No price set',
         media,
       };
     },
