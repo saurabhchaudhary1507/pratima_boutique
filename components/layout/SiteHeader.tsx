@@ -6,7 +6,6 @@ import { HamburgerMenu } from './HamburgerMenu';
 const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/catalogue', label: 'Catalogue' },
-  { href: '/collections', label: 'Collections' },
   { href: '/contact', label: 'Contact' },
 ];
 

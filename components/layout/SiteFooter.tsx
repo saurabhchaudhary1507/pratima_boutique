@@ -21,7 +21,6 @@ export function SiteFooter() {
             <ul className="space-y-2 text-sm">
               {[
                 { href: '/catalogue', label: 'Catalogue' },
-                { href: '/collections', label: 'Collections' },
                 { href: '/contact', label: 'Contact Us' },
                 { href: '/selection-list', label: 'Selection List' },
               ].map(({ href, label }) => (
